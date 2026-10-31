@@ -16,12 +16,10 @@ public abstract class EquipoRed { // TODO 2b: convertir en clase abstracta
     private double precio;
     private int cantidad;
     private Sede sede;
-    private
 
     // TODO 2b: declarar aquí el método abstracto calcularSoporteMensual()
 
     public abstract double calcularSoporteMensual(int cantidad, double precio){
-
     };
 
     public int getIdEquipo() {
