@@ -9,16 +9,20 @@ package pe.edu.pucp.iweb.lab7.beans;
  *
  * Los atributos, getters y setters ya están hechos.
  */
-public class EquipoRed { // TODO 2b: convertir en clase abstracta
-
+public abstract class EquipoRed { // TODO 2b: convertir en clase abstracta
     private int idEquipo;
     private String modelo;
     private String tipo;      // 'SWITCH' o 'AP' (solo para mostrarlo en la tabla)
     private double precio;
     private int cantidad;
     private Sede sede;
+    private
 
     // TODO 2b: declarar aquí el método abstracto calcularSoporteMensual()
+
+    public abstract double calcularSoporteMensual(int cantidad, double precio){
+
+    };
 
     public int getIdEquipo() {
         return idEquipo;

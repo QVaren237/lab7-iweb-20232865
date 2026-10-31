@@ -1,5 +1,8 @@
 package pe.edu.pucp.iweb.lab7.dao;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 import pe.edu.pucp.iweb.lab7.beans.Sede;
@@ -12,6 +15,9 @@ public class SedeDao extends BaseDao { // TODO 2a: debe heredar de BaseDao
     public ArrayList<Sede> listar() {
         ArrayList<Sede> lista = new ArrayList<>();
         // TODO 2c
+        try(Connection conn = this.getConection(); Statement stmt = conn.createStatement(); ResultSet rs = stmt.executeQuery("select * from sede")){
+
+        }
         return lista;
     }
 
